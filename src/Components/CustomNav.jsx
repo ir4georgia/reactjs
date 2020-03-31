@@ -4,6 +4,9 @@ import FNAGun from './FNAGun.jsx';
 import About from './About.jsx';
 import logo from '../logo.svg';
 import Home from './Home.jsx';
+import MyForm from './form.jsx';
+import Grid from './Grid.jsx';
+import WOD from './wod.jsx'
 
 export default class CustomNav extends Component {
 
@@ -30,18 +33,22 @@ export default class CustomNav extends Component {
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ul data-toggle="collapse" className="navbar-nav mr-auto">
                                 <li className="nav-item active"><Link to={'/react/'} className="nav-link">Home</Link></li>
-                                <li><Link to={'/react/fnagun'} className="nav-link">FNAGun</Link></li>
-                                <li><Link to={'/react/about'} className="nav-link">About</Link></li>
+                                <li className="nav-item"><Link to={'/react/fnagun'} className="nav-link">FNAGun</Link></li>
+                                <li className="nav-item"><Link to={'/react/form'} className="nav-link">Form</Link></li>
+                                <li className="nav-item"><Link to={'/react/grid'} className="nav-link">Grid</Link></li>
+                                <li className="nav-item"><Link to={'/react/wod'} className="nav-link">Word O' Day</Link></li>
+                                <li className="nav-item"><Link to={'/react/about'} className="nav-link">About</Link></li>
                             </ul>
-                            {/* <form className="form-inline mt-2 mt-md-0">
-                                <button className="btn btn-success pull-right"><span className="glyphicon glyphicon-ok"></span>{this.state.value}</button>
-                            </form> */}
+                
                         </div>
                     </nav>
                 </header>
                 <Switch>
                     <Route exact path="/react" component={Home}/>
                     <Route path='/react/fnagun' component={FNAGun} />
+                    <Route path='/react/form' component={MyForm} />
+                    <Route path='/react/grid' component={Grid} />
+                    <Route path='/react/wod' component={WOD} />
                     <Route path='/react/about' component={About} />
                 </Switch>
             </Router>

@@ -4,7 +4,7 @@ import Clock from './Clock';
 class About extends Component {
   render() {
     return (
-        <div>
+        <div id="aboutPage">
           <h2>About</h2>
           <p>This is a development app to help Michael learn about React.js</p>
           <Clock/>
