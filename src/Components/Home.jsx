@@ -6,7 +6,6 @@ class Home extends Component {
   componentDidMount() {
   
     // const script = document.createElement("script");
-
     // script.id="mpjs";
     // script.src = "https://www.googletagservices.com/tag/js/gpt.js";
     // script.async = true;
