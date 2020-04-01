@@ -24,7 +24,7 @@ class WOD extends Component {
         });
         snd.play()
 
-        fetch('https://www.turnerdigitalads.com/WoD/getWOD.php', {
+        fetch('https://www.turnerdigitalads.com/react/getWOD.php', {
             method: 'GET',
             // body: data,
         })
@@ -34,13 +34,15 @@ class WOD extends Component {
     }
 
     componentDidMount() {
-        fetch('https://www.turnerdigitalads.com/WoD/getWOD.php', {
+    
+        fetch('https://www.turnerdigitalads.com/react/getWOD.php', {
             method: 'GET',
             // body: data,
         })
-            .then(response => response.json())
-            .then(jsonStr => { this.setState(jsonStr) })
-            .catch(function (error) { console.log(error); })
+        .then(response => response.json())
+        .then(jsonStr => { this.setState(jsonStr) })
+        .catch(function (error) { console.log(error); })
+
     }
 
     render() {

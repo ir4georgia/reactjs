@@ -27,7 +27,7 @@ class MyForm extends Component {
 
     const data = new FormData(event.target);
 
-    fetch('https://www.turnerdigitalads.com/Otto/catchme.php', {
+    fetch('https://www.turnerdigitalads.com/react/catchme.php', {
       method: 'POST',
       body: data,
     })
